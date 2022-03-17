@@ -6,8 +6,8 @@
 			<file name="newStuff.xml" url="https://raw.githubusercontent.com/richardschenk/DnD/main/newStuff.xml" />
 		</update>
 	</info>
-
-   <element name="Ring of Fungal Symbiosis" type="Magic Item" source="Unknown" id="ID_UNKNOWN_U_MAGIC_ITEM_RING_OF_FUNGAL_SYMBIOSIS">
+    <!--Rings-->
+    <element name="Ring of Fungal Symbiosis" type="Magic Item" source="Unknown" id="ID_UNKNOWN_U_MAGIC_ITEM_RING_OF_FUNGAL_SYMBIOSIS">
         <description>
             <p>Whenever you finish a long rest during which you wear this ring, you find a selection of toadstools have grown on the limb that sports this ring. Roll a <strong>d4</strong> twice and consult the table below to determine which two mushrooms have grown. If you choose to attune to this item, the ring causes four mushrooms to grow instead of two.</p>
             <p><ol> <li>Boomshroom</li> <li>Bloomshroom</li> <li>Doomshroom</li> <li>Gloomshroom</li> </ol></p>
@@ -22,6 +22,23 @@
             <set name="rarity">Uncommon</set>
         </setters>
     </element>
+   <element name="Catseye Ring" type="Magic Item" source="Unknown" id="ID_UNKNOWN_U_MAGIC_ITEM_CATSEYE_RING">
+        <description>
+            <p>This ring has <strong>5 charges</strong>, and regains all expended charges daily at dawm.</p>
+            <p class="indend"> <strong><em>Arcane Interference.</em></strong> While waering the ring, whenever you are the target of a spell or make a saving throw against a spell's area of effect, you can use your reaction to tug at the Weave, consuming <strong>1 charge</strong> and attempting to unravel the spell's magic. If the spell is of 2nd level or lower, roll a <strong>d4</strong> and consult the table below to determine the effect.</p>
+            <p><ol><li>The caster of the spell must make a <strong>DC 13 Wisdom saving throw</strong>, taking force damage equal to <strong>1d6</strong> plus an additional <strong>1d6</strong> for each level of the spell on a failed save, or half as much on a successful one.</li> <li>The spell's potency is diminished. If the spell requires an attack roll, the roll is made with <strong>disadvantage</strong>. If it requires you to make a saving throw, you have <strong>advantage</strong> on it. </li> <li> You absorb a portion of the spell's energy, gaining <strong>temporary hit points</strong> equal to <strong>1d6</strong> plus an additional <strong>1d6</strong> for each level of the spell. These temporary hit points last for <strong>1 minute</strong>. </li> <li>You are unaffected by the spell.</li> </ol> </p>
+        </description>
+        <setters>
+            <set name="category">Rings</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="slot">ring</set>
+            <set name="type">Ring</set>
+	    	<set name="attunement">false</set>
+            <set name="rarity">Uncommon</set>
+        </setters>
+    </element>
+    <!--Mushrooms-->
 	<element name="Boomshroom" type="Magic Item" source="Unknown" id="ID_UNKNOWN_U_MAGIC_ITEM_BOOMSHROOM">
         <description>
             <p>As an action a creature can throw this volatile mushroom at a point it can see within <strong>60 feet</strong> of it, where it explodes in a <strong>10-foot-radius sphere</strong>. Each creature in the area must make a <strong>DC 13 Dexterity saving throw</strong>, taking <strong>4d6</strong> fire damage on a failed save, or half as much damage on a successful one. The fire ignites flammable objects in the area that aren't being worn or carried.</p>
@@ -66,4 +83,20 @@
             <set name="rarity">Uncommon</set>
         </setters>
     </element>
+    <!--Weapons-->
+    <element name="Brittlebone Splinterspray Tommybow" type="Weapon" source="Unknown" id="ID_UNKNOWN_U_WEAPON_BRITTLEBONE_SPLINTERSPRAY_TOMMYBOW">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_GROUP_CROSSBOWS</supports>
+		<description>
+			<p><strong>+4</strong> to hit, range 30/120ft., two creatures within 5 feet of each other. <em>Hit:</em> 7(<strong>2d4 + 4</strong>) piercing damage. Reload (3).</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="5">5 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">30/120</set>
+			<set name="damage" type="piercing">2d4 + 4</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_LIGHT</set>
+		</setters>
+	</element>
 </elements>
