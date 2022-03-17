@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>New Stuff</name>
-		<update version="1.0.0">
+		<update version="1.0.1">
 			<file name="newStuff.xml" url="https://raw.githubusercontent.com/richardschenk/DnD/main/newStuff.xml" />
 		</update>
 	</info>
