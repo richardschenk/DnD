@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>New Stuff</name>
+		<update version="1.0.0">
+			<file name="newStuff.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/supplements/tales-from-the-yawning-portal/items.xml" />
+		</update>
+	</info>
+
+   <element name="Ring of Fungal Symbiosis" type="Magic Item" source="Unknown" id="ID_UNKNOWN_U_MAGIC_ITEM_RING_OF_FUNGAL_SYMBIOSIS">
+        <description>
+            <p>Whenever you finish a long rest during which you wear this ring, you find a selection of toadstools have grown on the limb that sports this ring. Roll a <strong>d4</strong> twice and consult the table below to determine which two mushrooms have grown. If you choose to attune to this item, the ring causes four mushrooms to grow instead of two.</p>
+            <p><ol> <li>Boomshroom</li> <li>Bloomshroom</li> <li>Doomshroom</li> <li>Gloomshroom</li> </ol></p>
+        </description>
+        <setters>
+            <set name="category">Rings</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="slot">ring</set>
+            <set name="type">Ring</set>
+	    	<set name="attunement">true</set>
+            <set name="rarity">Uncommon</set>
+        </setters>
+    </element>
+	<element name="Boomshroom" type="Magic Item" source="Unknown" id="ID_UNKNOWN_U_MAGIC_ITEM_BOOMSHROOM">
+        <description>
+            <p>As an action a creature can throw this volatile mushroom at a point it can see within <strong>60 feet</strong> of it, where it explodes in a <strong>10-foot-radius sphere</strong>. Each creature in the area must make a <strong>DC 13 Dexterity saving throw</strong>, taking <strong>4d6</strong> fire damage on a failed save, or half as much damage on a successful one. The fire ignites flammable objects in the area that aren't being worn or carried.</p>
+        </description>
+        <setters>
+            <set name="category">Mushrooms</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0.5">½ lb.</set>
+            <set name="rarity">Uncommon</set>
+        </setters>
+    </element>
+	<element name="Bloomshroom" type="Magic Item" source="Unknown" id="ID_UNKNOWN_U_MAGIC_ITEM_BLOOMSHROOM">
+        <description>
+            <p>As an action a creature can eat this mushroom, regaining <strong>2d4 + 2</strong> hit points and gaining advantage on all <strong>Constitution saving throws</strong> for <strong>1 minute</strong>.</p>
+        </description>
+        <setters>
+            <set name="category">Mushrooms</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0.5">½ lb.</set>
+            <set name="rarity">Uncommon</set>
+        </setters>
+    </element>
+    <element name="Doomshroom" type="Magic Item" source="Unknown" id="ID_UNKNOWN_U_MAGIC_ITEM_DOOMSHROOM">
+        <description>
+            <p>As an action a creature can throw this dusky mushroom at a point it can see within <strong>60 feet</strong> of it, where it explodes in a <strong>10-foot-radius sphere</strong> of purple spores. Each creature in the area must succeed on a <strong>DC 13 Constitution saving throw</strong> or become afflicted by the <em>bane</em> spell for <strong>1 minute</strong>. An affected creature can repeat the saving throw at the end of each of its turns, ending the effect for it on a success.</p>
+        </description>
+        <setters>
+            <set name="category">Mushrooms</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0.5">½ lb.</set>
+            <set name="rarity">Uncommon</set>
+        </setters>
+    </element>
+    <element name="Gloomshroom" type="Magic Item" source="Unknown" id="ID_UNKNOWN_U_MAGIC_ITEM_GLOOMSHROOM">
+        <description>
+            <p>As an action a creature can eat this mushroom. For the next hour, it gains darkvision out to a range of <strong>60 feet</strong>. If it already has darkvision, the range of this vision is extended by <strong>30 feet</strong>.</p>
+        </description>
+        <setters>
+            <set name="category">Mushrooms</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0.5">½ lb.</set>
+            <set name="rarity">Uncommon</set>
+        </setters>
+    </element>
+</elements>
