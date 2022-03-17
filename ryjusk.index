@@ -2,12 +2,10 @@
 <index>
   <info>
     <update version="1.0.0">
-      <file name="ryjusk.index" url="https://github.com/richardschenk/DnD/blob/25945cc48999f19782db2d092ce02ce949e78510/ryjusk.index" />
+      <file name="ryjusk.index" url="https://raw.githubusercontent.com/richardschenk/DnD/main/ryjusk.index" />
     </update>
   </info>
   <files>
-    <file name="newStuff.xml" url="https://github.com/richardschenk/DnD/blob/25945cc48999f19782db2d092ce02ce949e78510/newStuff.xml" />
+    <file name="newStuff.xml" url="https://raw.githubusercontent.com/richardschenk/DnD/main/newStuff.xml" />
   </files>
 </index>
-
-
